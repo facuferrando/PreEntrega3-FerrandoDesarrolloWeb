@@ -1,0 +1,124 @@
+$altminima:calc(100vh - 293px - 100px);
+
+li{
+    display: inline;  
+    a{
+        img:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+
+
+body{
+    background-image: url(../img/videogamepattern.jpg); 
+    font-family: 'Titillium Web', sans-serif;
+}
+.fotoconsola {
+    display: flex;
+    justify-items: center;
+
+}
+.listadenoticias{
+    display: block;
+}
+.stickyjoy{
+    position: sticky;
+    bottom: 10px;
+    display: inline-block;
+    left: 100%;
+}
+.fotodejuego{
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px;;
+}
+.tituloconsola{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.juego{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
+.textoconsola{
+    display: block;
+    padding: 30px;    
+}
+.consolas{
+    padding: 10px 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ps5 xbox "
+    "pc nintendo";
+                div {
+                    background-color:rgb(255, 255, 255);
+                    }
+}
+.noticias{
+    display: inline-block;
+}
+.ps5inicio{
+    grid-area: ps5;
+}
+
+.xboxinicio{
+    grid-area: xbox;
+}
+
+.pcinicio{
+
+    grid-area: pc;
+}
+
+
+.nintendoinicio{
+    grid-area: nintendo;
+}
+.juego1{
+    grid-area: juego1;
+    }
+    
+.juego2{
+    grid-area: juego2;
+    }
+    
+.juego3{
+    grid-area: juego3;
+    }
+.grilladejuegos{
+        padding:10px 50px ;
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "juego1 juego2"
+        " juego3 juego3 ";
+        }
+        
+.grillageneral-nav{
+        padding: 30px 30px;
+        grid-area: grillanav;
+        }
+        
+.grillageneral-contenido{
+        grid-area: grillacont;
+        min-height: $altminima;
+        }
+        
+.grillageneral{
+            display: grid;
+            grid-template-columns:1fr ;
+            grid-template-rows: 0.1fr 1fr 0.1fr ;
+            grid-template-areas:
+            "grillanav"
+            "grillacont";
+        
+        }

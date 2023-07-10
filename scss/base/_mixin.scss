@@ -1,0 +1,15 @@
+// Aquí aprovecho el mixin para el media query y no tener que reescribir el grid template columns y rows.
+
+
+
+@mixin columna-fila ($col,$fil)
+{
+    grid-template-rows: $fil;
+    grid-template-columns: $col
+
+}
+
+
+
+
+

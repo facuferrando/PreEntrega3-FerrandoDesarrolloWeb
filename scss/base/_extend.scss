@@ -1,0 +1,16 @@
+// La idea de este archivo extend es usar el %nodeco para quitar la decoracion de los textos que tienen links.
+
+
+%nodeco {
+
+    text-decoration: none
+}
+
+a{  
+    @extend %nodeco;
+}
+.pixelblanco{
+    color: white;
+    @extend %nodeco;
+}
+

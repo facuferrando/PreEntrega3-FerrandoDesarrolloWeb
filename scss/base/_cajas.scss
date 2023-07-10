@@ -1,0 +1,10 @@
+$nums: 1,2,3,4;
+
+@each $num in $nums{
+    .caja#{$num} {
+                    display: flex;
+                    justify-content: center;
+                    grid-area: caja#{$num};
+                }
+}
+

@@ -1,0 +1,13 @@
+footer{
+    text-align: center;
+    .finaldepagina{
+        background-color: map-get($map: $colores, $key: Oscuro);
+        height: 100px;
+        display: block;
+        width: 100%;
+        p{  
+            color: map-get($map: $colores, $key: Blanquito);
+            padding-left: 10px;
+        }
+    }
+} 

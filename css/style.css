@@ -1,0 +1,243 @@
+.caja1 {
+  display: flex;
+  justify-content: center;
+  grid-area: caja1;
+}
+
+.caja2 {
+  display: flex;
+  justify-content: center;
+  grid-area: caja2;
+}
+
+.caja3 {
+  display: flex;
+  justify-content: center;
+  grid-area: caja3;
+}
+
+.caja4 {
+  display: flex;
+  justify-content: center;
+  grid-area: caja4;
+}
+
+.pixelblanco, a {
+  text-decoration: none;
+}
+
+.pixelblanco {
+  color: white;
+}
+
+li {
+  display: inline;
+}
+li a img:hover {
+  transform: scale(1.5);
+}
+
+body {
+  background-image: url(../img/videogamepattern.jpg);
+  font-family: "Titillium Web", sans-serif;
+}
+
+.fotoconsola {
+  display: flex;
+  justify-items: center;
+}
+
+.listadenoticias {
+  display: block;
+}
+
+.stickyjoy {
+  position: sticky;
+  bottom: 10px;
+  display: inline-block;
+  left: 100%;
+}
+
+.fotodejuego {
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.tituloconsola {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.juego {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.textoconsola {
+  display: block;
+  padding: 30px;
+}
+
+.consolas {
+  padding: 10px 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "ps5 xbox " "pc nintendo";
+}
+.consolas div {
+  background-color: rgb(255, 255, 255);
+}
+
+.noticias {
+  display: inline-block;
+}
+
+.ps5inicio {
+  grid-area: ps5;
+}
+
+.xboxinicio {
+  grid-area: xbox;
+}
+
+.pcinicio {
+  grid-area: pc;
+}
+
+.nintendoinicio {
+  grid-area: nintendo;
+}
+
+.juego1 {
+  grid-area: juego1;
+}
+
+.juego2 {
+  grid-area: juego2;
+}
+
+.juego3 {
+  grid-area: juego3;
+}
+
+.grilladejuegos {
+  padding: 10px 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "juego1 juego2" " juego3 juego3 ";
+}
+
+.grillageneral-nav {
+  padding: 30px 30px;
+  grid-area: grillanav;
+}
+
+.grillageneral-contenido {
+  grid-area: grillacont;
+  min-height: calc(100vh - 293px - 100px);
+}
+
+.grillageneral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas: "grillanav" "grillacont";
+}
+
+nav {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 20px;
+  width: 95%;
+  top: 10px;
+  min-height: max-content;
+  background-color: rgb(17, 14, 14);
+  border-style: solid;
+  border-color: rgb(17, 14, 14);
+  border-width: 3px;
+  z-index: 3;
+}
+nav p {
+  padding-top: 3px;
+  margin-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  border-style: dashed;
+  border-color: black;
+  border-width: 3px;
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+}
+nav ul {
+  grid-template-rows: 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  grid-template-areas: "caja1 caja2 caja3 caja4";
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "caja1    caja2" "caja3    caja4";
+    justify-content: space-between;
+    max-width: 90%;
+  }
+  .fotodejuego {
+    max-width: 50%;
+  }
+  .stickyjoy {
+    display: none;
+  }
+  .caja1, .caja2, .caja3, .caja4 {
+    max-width: 50%;
+  }
+  .grilladejuegos {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "juego1" "juego2" "juego3";
+  }
+  .consolas {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ps5" "xbox" "pc" "nintendo";
+  }
+}
+footer {
+  text-align: center;
+}
+footer .finaldepagina {
+  background-color: rgb(17, 14, 14);
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+footer .finaldepagina p {
+  color: rgb(231, 228, 228);
+  padding-left: 10px;
+}
+
+.finaldepagina {
+  background-color: black;
+  height: 100px;
+  display: block;
+  width: 100%;
+}
+.finaldepagina p {
+  padding-left: 10px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
